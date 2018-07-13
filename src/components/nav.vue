@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <ul>
-        <li v-for="item in navList" v-bind:data-id="item.id">{{item.text}}</li>
+        <li v-for="item in navList" :data-id="item.id" :key="item.id">{{item.text}}</li>
     </ul>
   </div>
 </template>
