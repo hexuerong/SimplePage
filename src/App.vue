@@ -6,15 +6,28 @@
       <router-link to="/TestRouter">Go to TestRouter</router-link>
     </div>
     <router-view/>
-    <firstcomponent></firstcomponent>
+    <!-- <firstcomponent></firstcomponent> -->
+    <tree></tree>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import firstcomponent from './components/nav'
+import tree from './components/tree'
 export default {
   name: 'App',
-  components: { firstcomponent }
+  components: { 
+    firstcomponent,
+    tree
+  },
+  data () {
+    return {
+      
+    }
+  },
+  methods: {
+    
+  }
 }
 </script>
 
